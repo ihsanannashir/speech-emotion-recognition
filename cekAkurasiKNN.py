@@ -13,7 +13,7 @@ def klasifikasiKNN(xx):
     dataset = pd.read_excel(path, header=None)
     X = dataset.iloc[1:, :40].values
     y = dataset.iloc[1:, 40].values
-    ujiCoba = 0.1
+    ujiCoba = 0.05
     iters=1
     while(iters<=3):
         print("")
@@ -36,7 +36,7 @@ def klasifikasiKNN(xx):
             n_tetangga+=4
             iterss+=1
         iters+=1
-        ujiCoba=ujiCoba+0.1
+        ujiCoba=ujiCoba+0.05
 
     print("Done")
 
